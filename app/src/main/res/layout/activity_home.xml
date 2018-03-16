@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.dsc.adf.notesapp.HomeActivity">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/no_notes_text"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:text="Nothing Here!!\n Add Something"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <ListView
+        android:id="@+id/notes_list"
+        android:layout_width="match_parent"
+        android:divider="@color/colorPrimary"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:padding="32dp"
+        android:id="@+id/fab"
+        app:srcCompat="@drawable/ic_add_black_48dp"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
